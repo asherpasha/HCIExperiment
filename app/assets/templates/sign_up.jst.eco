@@ -1,0 +1,21 @@
+<h3>Sign Up</h3>
+<div>
+  <div>
+    <input type='text' placeholder='Name'>
+  </div>
+  <div>
+    <textarea placeholder='Prior experience with eFP images'></textarea>
+  </div>
+  <div>
+    <textarea placeholder='Prior experience with computers'></textarea>
+  </div>
+  <div>
+    <span>Method of interaction: 
+      <select>
+        <option value="mouse">Mouse</option>
+        <option value="touchpad">Touchpad</option>
+      </select>
+    </span>
+  </div>
+</div>
+<button type="button" class="btn btn-default">Submit</button>

@@ -1,0 +1,8 @@
+<div>
+  <h3>Consent Form</h3>
+</div>
+<div>Consent form text lorem ipsum</div>
+<div>
+  <input type='text' placeholder='Email Address'>
+</div>
+<button type="button" class="btn btn-default">Submit</button>

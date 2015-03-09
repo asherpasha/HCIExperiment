@@ -33,6 +33,8 @@ gem 'lodash-rails'
 
 gem 'foreman'
 
+gem 'protected_attributes'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

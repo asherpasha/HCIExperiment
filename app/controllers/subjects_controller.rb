@@ -4,8 +4,11 @@ class SubjectsController < ApplicationController
 
   def update
     @subject = Subject.find_by_id(params[:id])
-    @subject.update_attributes(params[:subject] || {})
+    @subject.update_attributes(params[:subject])
     @subject.save
+    respond_to do |format|
+      format.json {render :json => @subject.to_json}
+    end
   end
  
   def create

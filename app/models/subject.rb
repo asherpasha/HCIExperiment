@@ -2,7 +2,7 @@ class Subject < ActiveRecord::Base
   has_many :results
   after_create :create_results
 
-  # attr_accessible :name, :age, :username, :group
+  attr_accessible :name, :age, :username, :group
 
   def create_results
     (1..5).each do |stimuli_number|
