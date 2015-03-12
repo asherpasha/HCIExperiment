@@ -14,6 +14,6 @@ class HCI.ConsentView extends Backbone.View
 
   showExperimentDescription: ->
     console.log('showExperimentDescription')
-    description_view = new HCI.ExperimentDescription(model: @model)
+    description_view = new HCI.ExperimentDescriptionView(model: @model)
     @remove()
     $('#experiment').html(description_view.render().el)

@@ -13,7 +13,6 @@ class HCI.SignUpView extends Backbone.View
     this
 
   showConsentForm: ->
-    console.log('showConsentForm')
     consent_view = new HCI.ConsentView(model: @model)
     @remove()
     $('#experiment').html(consent_view.render().el)

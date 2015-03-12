@@ -4,12 +4,52 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+#experiment {
+  margin-top: 100px;
+}
+
 div.dialog-form {
   width: 300px;
-  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   div {
     padding: 5px;
   }
   input, textarea {width: 200px}
   button {float: right}
+}
+
+div.experiment {
+  #stimuli {
+    padding-left: 40px;
+    display: inline-block;
+    vertical-align: top;
+    div.stimuli {
+      display: none;
+      &.show {
+        display: block;
+      }
+    }
+    .stimuli-1 {background-color: #FFFF00}
+    .stimuli-2 {background-color: #FFCC00}
+    .stimuli-3 {background-color: #FF4400}
+    .stimuli-4 {background-color: #FF0000}
+    .stimuli-5 {background-color: #FFAA00}
+    .stimuli-6 {background-color: #FF7700}
+    .stimuli-7 {background-color: #FFDD00}
+    .stimuli-8 {background-color: #FF2200}
+    .stimuli-9 {background-color: #FF1100}
+    .stimuli-10 {background-color: #FFFF00}
+  }
+  #controls {
+    display: inline-block;
+    background-color: lightgray;
+    width: 150px;
+    padding: 20px;
+    button {
+      margin-left: 30px;
+      width: 50px;
+      display: block;
+    }
+  }
 }
