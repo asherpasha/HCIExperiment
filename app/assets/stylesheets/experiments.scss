@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
 
 #experiment {
   margin-top: 100px;
@@ -44,12 +45,20 @@ div.experiment {
   #controls {
     display: inline-block;
     background-color: lightgray;
-    width: 150px;
+    width: 260px;
     padding: 20px;
     button {
-      margin-left: 30px;
-      width: 50px;
+      width: 100px;
+      margin-left: auto;
+      margin-right:auto;
       display: block;
+      &.stimuli-button {
+        width: 100px;
+      }
+      &.control {
+        width: 40px;
+        display: inline-block;
+      }
     }
   }
 }

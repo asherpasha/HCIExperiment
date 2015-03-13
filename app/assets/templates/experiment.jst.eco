@@ -1,3 +1,2 @@
 <div class='controls' id='controls'></div>
 <div class='stimuli' id='stimuli'></div>
-<button class='btn btn-default' id='submit'>Submit</button>

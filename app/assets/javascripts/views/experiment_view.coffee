@@ -35,17 +35,18 @@ class HCI.ExperimentView extends Backbone.View
 
   render: ->
     if @model.get('experiment_group') == 1 #point and click
-      @controls_view = new HCI.PointAndClickControlsView()
+      @controls_view = new HCI.PointAndClickControlsView(active_stimuli: @stimuli_id)
     else if @model.get('experiment_group') == 2 #automatic rsvp
-      @controls_view = new HCI.AutomaticRSVPControlsView()
+      @controls_view = new HCI.AutomaticRSVPControlsView(active_stimuli: @stimuli_id)
     else if @model.get('experiment_group') == 3 #hover rsvp
-      @controls_view = new HCI.HoverControlsView()
+      @controls_view = new HCI.HoverControlsView(active_stimuli: @stimuli_id)
     else if @model.get('experiment_group') == 4 #momentum rsvp
-      @controls_view = new HCI.MomentumControlsView()
+      @controls_view = new HCI.SliderControlsView(active_stimuli: @stimuli_id)
     else
       @$el.html(@template())
       @controls_view = new HCI.ControlsView()
-
+    # @controls_view = new HCI.AutomaticRSVPControlsView(active_stimuli: @stimuli_id)
+    # @controls_view = new HCI.SliderControlsView(active_stimuli: @stimuli_id)
     @$el.html(@template())
     @stimuli_view = new HCI.StimuliView(active_stimuli: @stimuli_id)
     @$('#stimuli').html(@stimuli_view.render().el)
@@ -63,4 +64,6 @@ class HCI.ExperimentView extends Backbone.View
   selectStimuli: (event) ->
     confirm_view = new HCI.ConfirmView(model: @model, result: @result, stimuli_id: @active_stimuli)
     @remove()
+    @stimuli_view.remove()
+    @controls_view.remove()
     $('#experiment').html(confirm_view.render().el)

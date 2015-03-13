@@ -8,3 +8,7 @@
 <button class='btn btn-default stimuli-button' data-stimuli-number='8'>8</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='9'>9</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='10'>10</button>
+<br/>
+<button class='btn btn-default' id='rsvp'>Start</button>
+<br/>
+<button class='btn btn-default' id='submit'>Submit</button>

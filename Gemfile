@@ -27,6 +27,7 @@ gem 'rspec'
 gem 'rspec-rails'
 gem 'guard'
 
+gem 'font-awesome-sass'
 gem 'bootstrap-sass'
 gem 'backbone-on-rails'
 gem 'lodash-rails'

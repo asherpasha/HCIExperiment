@@ -1,0 +1,21 @@
+<button class='btn btn-default stimuli-button' data-stimuli-number='1'>1</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='2'>2</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='3'>3</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='4'>4</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='5'>5</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='6'>6</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='7'>7</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='8'>8</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='9'>9</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='10'>10</button>
+<br/>
+<div>
+<button class='btn btn-default control fast-backward'><i class="fa fa-fast-backward"></i></button>
+<button class='btn btn-default control backward'><i class="fa fa-backward"></i></button>
+<button class='btn btn-default control pause'><i class="fa fa-pause"></i></button>
+<button class='btn btn-default control forward'><i class="fa fa-forward"></i></button>
+<button class='btn btn-default control fast-forward'><i class="fa fa-fast-forward"></i></button>
+</div>
+<br/>
+<br/>
+<button class='btn btn-default' id='submit'>Submit</button>
