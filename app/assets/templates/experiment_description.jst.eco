@@ -1,3 +1,20 @@
 <h3>Experiment Description</h3>
+<% if @model.get('experiment_group') == 1: %>
+  <div>
+    Description 1
+  </div>
+<% else if @model.get('experiment_group') == 2: %>
+  <div>
+    Description 2
+  </div>
+<% else if @model.get('experiment_group') == 3: %>
+  <div>
+    Description 3
+  </div>
+<% else: %>
+  <div>
+    Description 4
+  </div>
+<% end %>
 <div>This is an explanation of what will be done in the experiment</div>
 <button type="button" class="btn btn-default">Next</button>

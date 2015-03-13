@@ -1,8 +1,15 @@
 <div>
   <h3>Consent Form</h3>
 </div>
-<div>Consent form text lorem ipsum</div>
 <div>
-  <input type='text' placeholder='Email Address'>
+<p>I hereby consent by clicking Submit to participate in a study conducted by Jamie Waese, Simon Cook, Sathaporn Hu, Xiwn Zhou, and Pan Zhang for an assignment in University of Toronto Computer Science 428, Research Methods in Human Computer Interaction.</p>
+<p>I agree to participate in this study the purpose of which is to evaluate methods of presentation of images using Rapid Serial Visual Presentation
+I understand that the procedures to be used are the rapid presentation and selection of images. </p>
+<p>I will receive no compensation for my participation.</p>
+<p>I am free to withdraw before or any time during the study without the need to give any explanation.<p>
+<p>All materials and results will be kept confidential, and, in particular, that my name and any identifying or identified information will not be associated with the data.</p>
+</div>
+<div>
+  <input id="email" class="form-control" type='text' placeholder='Email Address'>
 </div>
 <button type="button" class="btn btn-default">Submit</button>

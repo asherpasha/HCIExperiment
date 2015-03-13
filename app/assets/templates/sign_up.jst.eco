@@ -1,9 +1,9 @@
 <h3>Sign Up</h3>
 <div>
   <div>
-    <input type='text' placeholder='Name'>
+    <input id="name" class="form-control" type='text' placeholder='Name'>
   </div>
-  <div>
+<!--   <div>
     <textarea placeholder='Prior experience with eFP images'></textarea>
   </div>
   <div>
@@ -16,6 +16,6 @@
         <option value="touchpad">Touchpad</option>
       </select>
     </span>
-  </div>
+  </div> -->
 </div>
 <button type="button" class="btn btn-default">Submit</button>

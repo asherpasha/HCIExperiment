@@ -4,7 +4,6 @@ class HCI.Router extends Backbone.Router
     'experiment/:id' :'showExperiment'
 
   showIndex: =>
-    HCI.subject.save()
     @sign_up_view = new HCI.SignUpView(model: HCI.subject)
     $('#experiment').html(@sign_up_view.render().el)
 

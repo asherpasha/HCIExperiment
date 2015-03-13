@@ -9,7 +9,7 @@ class HCI.ExperimentDescriptionView extends Backbone.View
   init: ->
 
   render: ->
-    @$el.html(@template())
+    @$el.html(@template(model: @model))
     this
 
   showExperiment: ->

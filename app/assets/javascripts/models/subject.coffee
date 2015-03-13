@@ -4,3 +4,6 @@ class HCI.Subject extends Backbone.Model
       '/subjects'
     else
       "/subjects/#{@id}"
+
+  initialize: ->
+    @results = new HCI.Results()
