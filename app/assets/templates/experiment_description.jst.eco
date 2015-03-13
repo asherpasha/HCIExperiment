@@ -16,5 +16,5 @@
     Description 4
   </div>
 <% end %>
-<div>This is an explanation of what will be done in the experiment</div>
+<div></div>
 <button type="button" class="btn btn-default">Next</button>

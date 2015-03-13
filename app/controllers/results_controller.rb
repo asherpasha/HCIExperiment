@@ -9,7 +9,8 @@ class ResultsController < ApplicationController
   end
 
   def create
-    @result = Result.new(params[:subject])
+    puts params
+    @result = Result.new(params[:result])
     @result.save
     respond_to do |format|
       format.json {render :json => @result.to_json}

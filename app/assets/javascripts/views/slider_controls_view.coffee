@@ -61,7 +61,7 @@ class HCI.SliderControlsView extends Backbone.View
     if @$("button[data-stimuli-number='#{@active_stimuli}']").prev('.stimuli-button').length > 0
       @$("button[data-stimuli-number='#{@active_stimuli}']").prev('.stimuli-button').trigger('click')
     else
-      @$("button[data-stimuli-number='10']").trigger('click')
+      @$("button[data-stimuli-number='5']").trigger('click')
     @startRSVPReverse(timeout)
 
   fastBackward: ->

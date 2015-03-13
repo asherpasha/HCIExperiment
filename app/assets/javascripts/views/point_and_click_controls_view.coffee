@@ -1,5 +1,5 @@
 class HCI.PointAndClickControlsView extends Backbone.View
-  template: JST['controls']
+  template: JST['point_and_click_controls']
   
   initialize: (options) ->
     @active_stimuli = options?.active_stimuli

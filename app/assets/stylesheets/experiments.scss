@@ -9,6 +9,10 @@
   margin-top: 100px;
 }
 
+.hidden-images {
+  div {display: none}
+}
+
 div.dialog-form {
   width: 300px;
   margin-left: auto;
@@ -17,7 +21,10 @@ div.dialog-form {
     padding: 5px;
   }
   input, textarea {width: 200px}
-  button {float: right}
+  button {
+    float: right;
+    margin-top: 20px;
+  }
 }
 
 div.experiment {

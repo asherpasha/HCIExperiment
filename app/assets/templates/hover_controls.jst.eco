@@ -3,8 +3,3 @@
 <button class='btn btn-default stimuli-button' data-stimuli-number='3'>3</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='4'>4</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='5'>5</button>
-<button class='btn btn-default stimuli-button' data-stimuli-number='6'>6</button>
-<button class='btn btn-default stimuli-button' data-stimuli-number='7'>7</button>
-<button class='btn btn-default stimuli-button' data-stimuli-number='8'>8</button>
-<button class='btn btn-default stimuli-button' data-stimuli-number='9'>9</button>
-<button class='btn btn-default stimuli-button' data-stimuli-number='10'>10</button>

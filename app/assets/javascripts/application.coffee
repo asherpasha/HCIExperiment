@@ -25,5 +25,4 @@
 #= require ./routers/router
 
 $(document).ready ->
-  console.log 'application.coffee init'
   HCI.init()

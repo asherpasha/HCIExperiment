@@ -1,0 +1,4 @@
+<p>Select the image that is most red in the highlighted area</p>
+<img src="/assets/Q-0<%= @model.results.size() + 1 %>-primingImage.png">
+<br/>
+<button type="button" class="btn btn-default">Next</button>
