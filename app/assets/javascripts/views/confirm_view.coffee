@@ -3,15 +3,17 @@ class HCI.ConfirmView extends Backbone.View
   
   events: ->
     'changeStimuli': 'changeStimuli'
-    'selectStimuli': 'confirmStimuli'
     'click #back': 'back'
+    'click #confirm': 'confirm'
 
   className: 'experiment'
 
   initialize: (options) ->
+    console.log options
     @result = options.result
     @stimuli_id = options.stimuli_id
     @current_stimuli = @stimuli_id
+    console.log options.result
 
   render: ->
     @$el.html(@template())
@@ -26,7 +28,7 @@ class HCI.ConfirmView extends Backbone.View
     @current_stimuli = $(event.target).attr('data-stimuli-number')
     @stimuli_view.showStimuli($(event.target).attr('data-stimuli-number'))
 
-  selectStimuli: (event) ->
+  confirm: (event) ->
     @end()
     @remove()
     if @model.results.size() == 5
@@ -37,11 +39,11 @@ class HCI.ConfirmView extends Backbone.View
     # confirm_view = new HCI.ConfirmView(model: @model, stimuli_id: $(event.target).attr('data-stimuli-number'))
 
   end: ->
-    @result.set('end_time', new DateTime())
+    @result.set('end_time', new Date())
     @result.set('answer', @current_stimuli)
     @result.save()
 
   back: ->
-    experiment_view = new HCI.ExperimentView(model: @model)
+    experiment_view = new HCI.ExperimentView(model: @model, result: @result, stimuli_id: @current_stimuli)
     @remove()
     $('#experiment').html(experiment_view.render().el)

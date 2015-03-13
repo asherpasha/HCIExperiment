@@ -4,26 +4,29 @@ class HCI.ExperimentView extends Backbone.View
   events: ->
     'changeStimuli': 'changeStimuli'
     'selectStimuli': 'selectStimuli'
-    'click #submit': 'submit'
+    'click #submit': 'selectStimuli'
 
   className: 'experiment'
 
   initialize: (options) ->
-    if options.stimuli_id?
+    if options?.stimuli_id?
       @stimuli_id = options.stimuli_id
-      
-    @result = new HCI.Result(subject_id: @model.get('id'))
-    @model.results.add(@result)
-    if @model.results.indexOf(@result) == 0
-      @result.set('answer', 1)
-    else if @model.results.indexOf(@result) == 1
-      @result.set('answer', 2)
-    else if @model.results.indexOf(@result) == 2
-      @result.set('answer', 3)
-    else if @model.results.indexOf(@result) == 3
-      @result.set('answer', 4)
-    else if @model.results.indexOf(@result) == 4
-      @result.set('answer', 5)
+    if options?.result?
+      @result = options.result
+    else
+      @result = new HCI.Result(subject_id: @model.get('id'))
+      @model.results.add(@result)
+      if @model.results.indexOf(@result) == 0
+        @result.set('answer', 1)
+      else if @model.results.indexOf(@result) == 1
+        @result.set('answer', 2)
+      else if @model.results.indexOf(@result) == 2
+        @result.set('answer', 3)
+      else if @model.results.indexOf(@result) == 3
+        @result.set('answer', 4)
+      else if @model.results.indexOf(@result) == 4
+        @result.set('answer', 5)
+      @start()
 
   render: ->
     if @model.get('experiment_group') == 1 #point and click
@@ -41,14 +44,14 @@ class HCI.ExperimentView extends Backbone.View
     else
       @$el.html(@template())
       @controls_view = new HCI.ControlsView()
+    @$el.html(@template())
     @stimuli_view = new HCI.StimuliView(active_stimuli: @stimuli_id)
     @$('#stimuli').html(@stimuli_view.render().el)
     @$('#controls').html(@controls_view.render().el)
-    @start()
     this
 
   start: ->
-    @result.set('start_time', new DateTime())
+    @result.set('start_time', new Date())
     @result.save()
 
   changeStimuli: (event) ->
@@ -56,11 +59,6 @@ class HCI.ExperimentView extends Backbone.View
     @stimuli_view.showStimuli($(event.target).attr('data-stimuli-number'))
 
   selectStimuli: (event) ->
-    confirm_view = new HCI.ConfirmView(model: @model, stimuli_id: $(event.target).attr('data-stimuli-number'))
-    @remove()
-    $('#experiment').html(confirm_view.render().el)
-
-  submit: ->
-    confirm_view = new HCI.ConfirmView(model: @model, stimuli_id: @active_stimuli)
+    confirm_view = new HCI.ConfirmView(model: @model, result: @result, stimuli_id: @active_stimuli)
     @remove()
     $('#experiment').html(confirm_view.render().el)

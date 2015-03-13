@@ -1,4 +1,4 @@
-class HCI.Subject extends Backbone.Model
+class HCI.Result extends Backbone.Model
   url: ->
     if @.isNew()
       '/results'
