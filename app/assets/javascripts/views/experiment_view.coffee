@@ -17,33 +17,35 @@ class HCI.ExperimentView extends Backbone.View
       @result = new HCI.Result(subject_id: @model.get('id'))
       @model.results.add(@result)
       if @model.results.indexOf(@result) == 0
+        $('a.navbar-brand').text('Question 1')
         @result.set('answer', 1)
       else if @model.results.indexOf(@result) == 1
+        $('a.navbar-brand').text('Question 2')
         @result.set('answer', 2)
       else if @model.results.indexOf(@result) == 2
+        $('a.navbar-brand').text('Question 3')
         @result.set('answer', 3)
       else if @model.results.indexOf(@result) == 3
+        $('a.navbar-brand').text('Question 4')
         @result.set('answer', 4)
       else if @model.results.indexOf(@result) == 4
+        $('a.navbar-brand').text('Question 5')
         @result.set('answer', 5)
       @start()
 
   render: ->
     if @model.get('experiment_group') == 1 #point and click
-      console.log('group 1')
       @controls_view = new HCI.PointAndClickControlsView()
     else if @model.get('experiment_group') == 2 #automatic rsvp
-      console.log('group 2')
       @controls_view = new HCI.AutomaticRSVPControlsView()
     else if @model.get('experiment_group') == 3 #hover rsvp
-      console.log('group 3')
       @controls_view = new HCI.HoverControlsView()
     else if @model.get('experiment_group') == 4 #momentum rsvp
-      console.log('group 4')
       @controls_view = new HCI.MomentumControlsView()
     else
       @$el.html(@template())
       @controls_view = new HCI.ControlsView()
+
     @$el.html(@template())
     @stimuli_view = new HCI.StimuliView(active_stimuli: @stimuli_id)
     @$('#stimuli').html(@stimuli_view.render().el)

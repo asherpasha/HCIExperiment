@@ -13,8 +13,14 @@ class Subject < ActiveRecord::Base
   end
 
   def set_group
-    if Subject.count == 0
+    if Subject.where(experiment_group: 1).count == 0
       self.experiment_group = 1
+    elsif Subject.where(experiment_group: 2).count == 0
+      self.experiment_group = 2
+    elsif Subject.where(experiment_group: 3).count == 0
+      self.experiment_group = 3
+    elsif Subject.where(experiment_group: 4).count == 0
+      self.experiment_group = 4
     else
       self.experiment_group = Subject.group(:experiment_group).count.sort_by{|v| v.last}.first()[0]
     end

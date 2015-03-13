@@ -9,11 +9,9 @@ class HCI.ConfirmView extends Backbone.View
   className: 'experiment'
 
   initialize: (options) ->
-    console.log options
     @result = options.result
     @stimuli_id = options.stimuli_id
     @current_stimuli = @stimuli_id
-    console.log options.result
 
   render: ->
     @$el.html(@template())
@@ -36,7 +34,6 @@ class HCI.ConfirmView extends Backbone.View
     else
       experiment_view = new HCI.ExperimentView(model: @model)
       $('#experiment').html(experiment_view.render().el)
-    # confirm_view = new HCI.ConfirmView(model: @model, stimuli_id: $(event.target).attr('data-stimuli-number'))
 
   end: ->
     @result.set('end_time', new Date())
