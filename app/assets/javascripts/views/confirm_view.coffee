@@ -18,7 +18,7 @@ class HCI.ConfirmView extends Backbone.View
     @stimuli_view = new HCI.StimuliView(active_stimuli: @stimuli_id, stimuli_number: @model.results.size())
     @controls_view = new HCI.ConfirmControlsView(active_stimuli: @stimuli_id)
     @$('#stimuli').html(@stimuli_view.render().el)
-    @$('#controls').html(@controls_view.render().el)
+    @$('#confirm_controls').html(@controls_view.render().el)
     @$('h3').text('Confirm selection')
     this
 

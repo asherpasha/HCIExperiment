@@ -3,6 +3,7 @@ class SubjectsController < ApplicationController
   end
 
   def update
+    puts params[:subject]
     @subject = Subject.find_by_id(params[:id])
     @subject.update_attributes(params[:subject])
     @subject.save
@@ -12,8 +13,11 @@ class SubjectsController < ApplicationController
   end
  
   def create
+    puts params
+    puts params[:subject]
     @subject = Subject.new(params[:subject])
     @subject.save
+    puts @subject.efp_experience
     respond_to do |format|
       format.json {render :json => @subject.to_json}
     end

@@ -1,4 +1,6 @@
-<div class='controls' id='controls'></div>
+<div id="controls">
+  <div id='confirm_controls'></div>
+  <button class="btn btn-default" id="back">Back</button>
+  <button class="btn btn-default" id="confirm">Confirm</button>
+</div>
 <div class='stimuli' id='stimuli'></div>
-<button class="btn btn-default" id="back">Back</button>
-<button class="btn btn-default" id="confirm">Confirm</button>

@@ -1,1 +1,38 @@
-Thanks for participating!
+
+<div>
+  <p>How did you feel about the method of interaction for comparing images?</p>
+  <select id="interaction_rating">
+    <option value="null"></option>
+    <option value="1">Very Negative</option>
+    <option value="2">Negative</option>
+    <option value="3">Neutral</option>
+    <option value="4">Positive</option>
+    <option value="5">Very Positive</option>
+  </select>
+</div>
+
+<div>
+  <p>How helpful was the display method for completing the task?</p>
+  <select id="display_helpfulness">
+    <option value="null"></option>
+    <option value="1">Very unhelpful</option>
+    <option value="2">Unhelpful</option>
+    <option value="3">Neutral</option>
+    <option value="4">Helpful</option>
+    <option value="5">Very helpful</option>
+  </select>
+</div>
+
+<% if @model.get('group') != 1: %>
+<div>
+  <p>How would you describe the experience of using an RSVP display?</p>
+  <textarea id='rsvp_experience'></textarea>
+</div>
+<% end %>
+
+<div>
+  <p>Was there anything about the experience you found difficult?</p>
+  <textarea id='experience_difficulty'></textarea>
+</div>
+
+<button type="button" class="btn btn-default">Submit</button>

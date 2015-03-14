@@ -1,19 +1,19 @@
 <h3>Experiment Description</h3>
 <% if @model.get('experiment_group') == 1: %>
   <div>
-    Description 1
+    In this experiment you will answering questions about a series of images. You will be asked to select an image from a set of images, then confirm your choice. Select images by clicking on the buttons on the sidebar.
   </div>
 <% else if @model.get('experiment_group') == 2: %>
   <div>
-    Description 2
+    In this experiment you will answering questions about a series of images. You will be asked to select an image from a set of images, then confirm your choice. Click start in the sidebar to begin automatically scrolling through the images, and stop when you find the one you want to submit.
   </div>
 <% else if @model.get('experiment_group') == 3: %>
   <div>
-    Description 3
+    In this experiment you will answering questions about a series of images. You will be asked to select an image from a set of images, then confirm your choice. Hover over the buttons in the sidebar to quickly compare images, then click the button to select the one you want.
   </div>
 <% else: %>
   <div>
-    Description 4
+    In this experiment you will answering questions about a series of images. You will be asked to select an image from a set of images, then confirm your choice. Hover over the playback controls to begin automatically scrolling through the images, and hover over stop when you find the one you want to submit.
   </div>
 <% end %>
 <div></div>

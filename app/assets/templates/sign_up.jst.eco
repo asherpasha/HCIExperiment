@@ -3,19 +3,16 @@
   <div>
     <input id="name" class="form-control" type='text' placeholder='Name'>
   </div>
-<!--   <div>
-    <textarea placeholder='Prior experience with eFP images'></textarea>
-  </div>
   <div>
-    <textarea placeholder='Prior experience with computers'></textarea>
+    <p>How familiar are you with electronic fluorescent pictograph (eFP) images?</p>
+    <select id="efp_experience">
+      <option value="null"></option>
+      <option value="1">Not at all familiar</option>
+      <option value="2">Slightly familiar</option>
+      <option value="3">Somewhat familiar</option>
+      <option value="4">Moderately familiar</option>
+      <option value="5">Extremely familiar</option>
+    </select>
   </div>
-  <div>
-    <span>Method of interaction: 
-      <select>
-        <option value="mouse">Mouse</option>
-        <option value="touchpad">Touchpad</option>
-      </select>
-    </span>
-  </div> -->
 </div>
 <button type="button" class="btn btn-default">Submit</button>
