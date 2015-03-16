@@ -4,6 +4,9 @@
     <input id="name" class="form-control" type='text' placeholder='Name'>
   </div>
   <div>
+    <input id="email" class="form-control" type='text' placeholder='Email Address'>
+  </div>
+  <div>
     <p>How familiar are you with electronic fluorescent pictograph (eFP) images?</p>
     <select id="efp_experience">
       <option value="null"></option>

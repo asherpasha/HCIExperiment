@@ -6,14 +6,14 @@ class HCI.ConsentView extends Backbone.View
 
   className: 'dialog-form'
 
-  init: ->
-
   render: ->
     @$el.html(@template())
     this
 
   showExperimentDescription: ->
-    if @$('#email').val() != ''
+    if @$('#email').val() == ''
+      @$('#email').addClass('required')
+    else
       @model.set('email', @$('#email').val())
       xhr = @model.save()
       @$('button').attr('disabled', true)
