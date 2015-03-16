@@ -5,7 +5,7 @@ class HCI.Router extends Backbone.Router
 
   showIndex: =>
     @sign_up_view = new HCI.SignUpView(model: HCI.subject)
-    $('#experiment').html(@sign_up_view.render().el)
+    $('#forms').html(@sign_up_view.render().el)
 
   showExperiment: (part) ->
-    $('#experiment').text('some text')
+    $('#forms').text('some text')

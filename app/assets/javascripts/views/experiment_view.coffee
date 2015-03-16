@@ -16,29 +16,34 @@ class HCI.ExperimentView extends Backbone.View
       @result = options.result
     else
       @result = new HCI.Result(subject_id: @model.get('id'))
-      console.log @model.get('id')
-      console.log @result.get('subject_id')
       @model.results.add(@result)
       if @model.results.indexOf(@result) == 0
-        $('a.navbar-brand').text('Question 1')
         @result.set('answer', 1)
         @result.set('stimuli_number', 1)
       else if @model.results.indexOf(@result) == 1
-        $('a.navbar-brand').text('Question 2')
         @result.set('answer', 2)
         @result.set('stimuli_number', 2)
       else if @model.results.indexOf(@result) == 2
-        $('a.navbar-brand').text('Question 3')
         @result.set('answer', 3)
         @result.set('stimuli_number', 3)
       else if @model.results.indexOf(@result) == 3
-        $('a.navbar-brand').text('Question 4')
         @result.set('answer', 4)
         @result.set('stimuli_number', 4)
       else if @model.results.indexOf(@result) == 4
-        $('a.navbar-brand').text('Question 5')
         @result.set('answer', 5)
         @result.set('stimuli_number', 5)
+      else if @model.results.indexOf(@result) == 5
+        @result.set('answer', 3)
+        @result.set('stimuli_number', 6)
+      else if @model.results.indexOf(@result) == 6
+        @result.set('answer', 5)
+        @result.set('stimuli_number', 7)
+      else if @model.results.indexOf(@result) == 7
+        @result.set('answer', 1)
+        @result.set('stimuli_number', 8)
+      else if @model.results.indexOf(@result) == 8
+        @result.set('answer', 2)
+        @result.set('stimuli_number', 9)
       @start()
 
   render: ->
@@ -71,7 +76,6 @@ class HCI.ExperimentView extends Backbone.View
     @stimuli_view.showStimuli($(event.target).attr('data-stimuli-number'))
 
   selectStimuli: (event) =>
-    console.log @result
     confirm_view = new HCI.ConfirmView(model: @model, result: @result, stimuli_id: @active_stimuli)
     @remove()
     @stimuli_view.remove()

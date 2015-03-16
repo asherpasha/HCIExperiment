@@ -29,12 +29,12 @@ class HCI.ConfirmView extends Backbone.View
   confirm: (event) ->
     @end()
     @remove()
-    if @model.results.size() == 5
+    if @model.results.size() == 9
       post_test_view = new HCI.PostTestQuestionnaireView(model: @model)
-      $('#experiment').html(post_test_view.render().el)
+      $('#forms').html(post_test_view.render().el)
     else
       priming_view = new HCI.PrimingView(model: @model)
-      $('#experiment').html(priming_view.render().el)
+      $('#forms').html(priming_view.render().el)
 
   end: ->
     @result.set('end_time', new Date())
@@ -44,4 +44,4 @@ class HCI.ConfirmView extends Backbone.View
   back: ->
     experiment_view = new HCI.ExperimentView(model: @model, result: @result, stimuli_id: @current_stimuli)
     @remove()
-    $('#experiment').html(experiment_view.render().el)
+    $('#forms').html(experiment_view.render().el)

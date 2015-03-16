@@ -6,8 +6,6 @@ class HCI.SignUpView extends Backbone.View
 
   className: 'dialog-form'
 
-  init: ->
-
   render: ->
     @$el.html(@template())
     this
@@ -17,4 +15,4 @@ class HCI.SignUpView extends Backbone.View
     @model.set('efp_experience', +@$('#efp_experience').val())
     consent_view = new HCI.ConsentView(model: @model)
     @remove()
-    $('#experiment').html(consent_view.render().el)
+    $('#forms').html(consent_view.render().el)

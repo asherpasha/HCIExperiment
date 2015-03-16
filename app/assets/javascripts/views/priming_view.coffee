@@ -7,6 +7,7 @@ class HCI.PrimingView extends Backbone.View
   className: 'dialog-form'
 
   render: ->
+    $('a.navbar-brand').text("Question #{@model.results.size() + 1}")
     @$el.html(@template(model: @model))
     this
 
