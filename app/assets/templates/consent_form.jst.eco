@@ -9,7 +9,4 @@ I understand that the procedures to be used are the rapid presentation and selec
 <p>I am free to withdraw before or any time during the study without the need to give any explanation.<p>
 <p>All materials and results will be kept confidential, and, in particular, that my name and any identifying or identified information will not be associated with the data.</p>
 </div>
-<div>
-  <input id="email" class="form-control" type='text' placeholder='Email Address'>
-</div>
 <button type="button" class="btn btn-default">Submit</button>

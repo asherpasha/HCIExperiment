@@ -35,6 +35,17 @@ div.dialog-form {
   }
 }
 
+div.priming-image {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  button {
+    float: right;
+    margin-top: 20px;
+  }
+}
+
 div.experiment {
   #stimuli {
     padding-left: 40px;

@@ -8,6 +8,7 @@ class HCI.PostTestQuestionnaireView extends Backbone.View
 
   render: ->
     @$el.html(@template(model: @model))
+    $('a.navbar-brand').text("Post-test Questionnaire")
     this
 
   submit: ->
@@ -17,3 +18,4 @@ class HCI.PostTestQuestionnaireView extends Backbone.View
     @model.set('experience_difficulty', @$('#experience_difficulty').val())
     @model.save()
     @$el.html('Thank you for participating!')
+    $('a.navbar-brand').text("Thank you!")

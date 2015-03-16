@@ -44,4 +44,4 @@ class HCI.ConfirmView extends Backbone.View
   back: ->
     experiment_view = new HCI.ExperimentView(model: @model, result: @result, stimuli_id: @current_stimuli)
     @remove()
-    $('#forms').html(experiment_view.render().el)
+    $('#experiment').html(experiment_view.render().el)

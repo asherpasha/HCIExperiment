@@ -4,7 +4,7 @@ class HCI.PrimingView extends Backbone.View
   events:
     'click button': 'showExperiment'
 
-  className: 'dialog-form'
+  className: 'priming-image'
 
   render: ->
     $('a.navbar-brand').text("Question #{@model.results.size() + 1}")
