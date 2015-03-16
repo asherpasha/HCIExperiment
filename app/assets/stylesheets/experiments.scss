@@ -48,7 +48,7 @@ div.priming-image {
 
 div.experiment {
   #stimuli {
-    padding-left: 40px;
+    padding-left: 300px;
     display: inline-block;
     vertical-align: top;
     div.stimuli {
@@ -69,6 +69,8 @@ div.experiment {
     .stimuli-10 {background-color: #FFFF00}
   }
   #controls {
+    position:fixed;
+    height: 100%;
     display: inline-block;
     background-color: lightgray;
     width: 260px;
