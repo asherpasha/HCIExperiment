@@ -3,6 +3,6 @@
   <br/>
   <button class="btn btn-default" id="back">Back</button>
   <br/>
-  <button class="btn btn-default" id="confirm">Confirm</button>
+  <button class="btn btn-success" id="confirm">Confirm</button>
 </div>
 <div class='stimuli' id='stimuli'></div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314035743) do
+ActiveRecord::Schema.define(version: 20150316225718) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,9 @@ ActiveRecord::Schema.define(version: 20150314035743) do
     t.integer  "efp_experience"
     t.text     "rsvp_experience"
     t.text     "experience_difficulty"
+    t.string   "gender"
+    t.string   "color_test"
+    t.string   "input_type"
   end
 
   create_table "tests", force: :cascade do |t|

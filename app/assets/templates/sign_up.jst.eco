@@ -7,6 +7,9 @@
     <input id="email" class="form-control" type='text' placeholder='Email Address'>
   </div>
   <div>
+    <input id="age" class="form-control" type='text' placeholder='Age'>
+  </div>
+  <div>
     <p>How familiar are you with electronic fluorescent pictograph (eFP) images?</p>
     <select id="efp_experience">
       <option value="null"></option>
@@ -15,6 +18,32 @@
       <option value="3">Somewhat familiar</option>
       <option value="4">Moderately familiar</option>
       <option value="5">Extremely familiar</option>
+    </select>
+  </div>
+  <img src="/assets/sign-up.png">
+  <div>
+    <p>Gender</p>
+    <select id="gender">
+      <option value="null"></option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="female">Other</option>
+    </select>
+  </div>
+  <div>
+    <p>Method of interaction</p>
+    <select id="input_type">
+      <option value="null"></option>
+      <option value="mouse">Mouse</option>
+      <option value="keyboard">Keyboard</option>
+    </select>
+  </div>
+  <div>
+    <p>Choose the option that is red</p>
+    <select id="color_test">
+      <option value="null"></option>
+      <option class="red" value="red">Color 1&nbsp;&nbsp;&nbsp;&nbsp;</option>
+      <option class="orange" value="orange">Color 2&nbsp;&nbsp;&nbsp;&nbsp;</option>
     </select>
   </div>
 </div>

@@ -2,9 +2,8 @@ class Subject < ActiveRecord::Base
   has_many :results
 
   before_create :set_group
-  # after_create :create_results
 
-  attr_accessible :name, :age, :username, :experiment_group, :email, :efp_experience, :rsvp_experience, :experience_difficulty, :display_helpfulness, :interaction_rating
+  attr_accessible :name, :age, :username, :experiment_group, :email, :efp_experience, :rsvp_experience, :experience_difficulty, :display_helpfulness, :interaction_rating, :gender, :color_test, :input_type
 
   def create_results
     (1..5).each do |stimuli_number|

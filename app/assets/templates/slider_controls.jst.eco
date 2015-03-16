@@ -1,15 +1,12 @@
+<p>Hover over the playback controls to view images</p>
 <button class='btn btn-default stimuli-button' data-stimuli-number='1'>1</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='2'>2</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='3'>3</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='4'>4</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='5'>5</button>
 <br/>
-<div>
-<button class='btn btn-default control fast-backward'><i class="fa fa-fast-backward"></i></button>
-<button class='btn btn-default control backward'><i class="fa fa-backward"></i></button>
-<button class='btn btn-default control pause'><i class="fa fa-pause"></i></button>
-<button class='btn btn-default control forward'><i class="fa fa-forward"></i></button>
-<button class='btn btn-default control fast-forward'><i class="fa fa-fast-forward"></i></button>
+<div class='slider-controls'>
+  <div class='control fast-backward'><i class="fa fa-fast-backward"></i></div><div class='control backward'><i class="fa fa-backward"></i></div><div class='control pause'><i class="fa fa-pause"></i></div><div class='control forward'><i class="fa fa-forward"></i></div><div class='control fast-forward'><i class="fa fa-fast-forward"></i></div>
 </div>
 <br/>
 <br/>

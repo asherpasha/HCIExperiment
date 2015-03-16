@@ -22,7 +22,11 @@ class HCI.SignUpView extends Backbone.View
     else
       @model.set('email', @$('#email').val())
       @model.set('name', @$('#name').val())
+      @model.set('age', @$('#age').val())
       @model.set('efp_experience', +@$('#efp_experience').val())
+      @model.set('gender', @$('#gender').val())
+      @model.set('input_type', @$('#input_type').val())
+      @model.set('color_test', @$('#color_test').val())
       consent_view = new HCI.ConsentView(model: @model)
       @remove()
       $('#forms').html(consent_view.render().el)
