@@ -22,7 +22,7 @@
   </div>
   <img src="/assets/sign-up.png">
   <div>
-    <p>Gender</p>
+    Gender:
     <select id="gender">
       <option value="null"></option>
       <option value="male">Male</option>
@@ -31,7 +31,7 @@
     </select>
   </div>
   <div>
-    <p>Method of interaction</p>
+    Method of interaction:
     <select id="input_type">
       <option value="null"></option>
       <option value="mouse">Mouse</option>
@@ -39,7 +39,7 @@
     </select>
   </div>
   <div>
-    <p>Choose the option that is red</p>
+    Choose the option that is red:
     <select id="color_test">
       <option value="null"></option>
       <option class="red" value="red">Color 1&nbsp;&nbsp;&nbsp;&nbsp;</option>

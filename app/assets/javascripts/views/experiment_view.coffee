@@ -23,7 +23,7 @@ class HCI.ExperimentView extends Backbone.View
         @result.set('stimuli_number', 1)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the shoot apex inflorescence?")
       else if @model.results.indexOf(@result) == 1
-        @result.set('answer', 2)
+        @result.set('answer', 6)
         @result.set('stimuli_number', 2)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the sep/pet/stem/carp?")
       else if @model.results.indexOf(@result) == 2
@@ -39,19 +39,19 @@ class HCI.ExperimentView extends Backbone.View
         @result.set('stimuli_number', 5)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the cotyledons?")
       else if @model.results.indexOf(@result) == 5
-        @result.set('answer', 3)
+        @result.set('answer', 9)
         @result.set('stimuli_number', 6)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "seed silique embryo #6?")
       else if @model.results.indexOf(@result) == 6
-        @result.set('answer', 5)
+        @result.set('answer', 10)
         @result.set('stimuli_number', 7)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "leaf #2?")
       else if @model.results.indexOf(@result) == 7
-        @result.set('answer', 1)
+        @result.set('answer', 6)
         @result.set('stimuli_number', 8)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the root?")
       else if @model.results.indexOf(@result) == 8
-        @result.set('answer', 2)
+        @result.set('answer', 7)
         @result.set('stimuli_number', 9)
         $('a.navbar-brand').text($('a.navbar-brand').text() + question + "entire rosette after transition to flowering?")
       @start()
