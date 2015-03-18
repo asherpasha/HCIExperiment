@@ -38,7 +38,7 @@ class HCI.ConfirmView extends Backbone.View
 
   end: ->
     @result.set('end_time', new Date())
-    @result.set('answer', @current_stimuli)
+    @result.set('subject_answer', @current_stimuli)
     @result.save()
 
   back: ->

@@ -1,0 +1,48 @@
+<p>
+  <strong>ID:</strong>
+  <%= @subject.id %>
+</p>
+ 
+<p>
+  <strong>email:</strong>
+  <%= @subject.email %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @subject.age %>
+</p>
+ 
+<p>
+  <strong>Experiment Group:</strong>
+  <%= @subject.experiment_group %>
+</p>
+
+<p>
+  <strong>Color Test:</strong>
+  <%= @subject.color_test %>
+</p>
+ 
+<p>
+  <strong>eFP Experience:</strong>
+  <%= @subject.efp_experience %>
+</p>
+
+<p>
+  <strong>RSVP Experience:</strong>
+  <%= @subject.rsvp_experience %>
+</p>
+ 
+<p>
+  <strong>Gender:</strong>
+  <%= @subject.gender %>
+</p>
+
+<p>
+  <strong>Input Type:</strong>
+  <%= @subject.input_type %>
+</p>
+
+<% @subject.results.each do |result| %>
+  <p><%= result.inspect %></p>
+<% end %>

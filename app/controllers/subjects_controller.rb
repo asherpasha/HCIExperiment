@@ -2,6 +2,10 @@ class SubjectsController < ApplicationController
   def new
   end
 
+  def show
+    @subject = Subject.find_by_id(params[:id])
+  end
+
   def update
     puts params[:subject]
     @subject = Subject.find_by_id(params[:id])
