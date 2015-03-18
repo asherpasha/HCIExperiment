@@ -41,9 +41,23 @@ div.dialog-form {
     padding: 5px;
   }
   input, textarea {width: 200px}
+
+  input.color {width: auto}
   button {
     float: right;
     margin-top: 20px;
+  }
+  .red {
+    background-color: #FF0000;
+  }
+  .orange {
+    background-color: #FFA500;
+  }
+  .yellow {
+    background-color: #FFFC00;
+  }
+  .green {
+    background-color: #00FF00;
   }
 }
 
@@ -59,12 +73,6 @@ div.priming-image {
 }
 
 #color_test {
-  .red {
-    background-color: #FF0000;
-  }
-  .orange {
-    background-color: #F04900;
-  }
 }
 
 div.experiment {

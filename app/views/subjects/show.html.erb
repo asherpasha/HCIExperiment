@@ -19,6 +19,11 @@
 </p>
 
 <p>
+  <strong>Input Type:</strong>
+  <%= @subject.input_type %>
+</p>
+
+<p>
   <strong>Color Test:</strong>
   <%= @subject.color_test %>
 </p>
@@ -29,18 +34,28 @@
 </p>
 
 <p>
-  <strong>RSVP Experience:</strong>
-  <%= @subject.rsvp_experience %>
-</p>
- 
-<p>
   <strong>Gender:</strong>
   <%= @subject.gender %>
 </p>
 
 <p>
-  <strong>Input Type:</strong>
-  <%= @subject.input_type %>
+  <strong>RSVP Experience:</strong>
+  <%= @subject.rsvp_experience %>
+</p>
+ 
+<p>
+  <strong>Experience Difficulty:</strong>
+  <%= @subject.experience_difficulty %>
+</p>
+
+<p>
+  <strong>Display Helpfulness:</strong>
+  <%= @subject.display_helpfulness %>
+</p>
+
+<p>
+  <strong>Interaction Rating:</strong>
+  <%= @subject.interaction_rating %>
 </p>
 
 <% @subject.results.each do |result| %>

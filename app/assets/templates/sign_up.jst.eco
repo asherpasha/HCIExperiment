@@ -27,12 +27,11 @@
     </select>
   </div>
   <div>
-    Choose the option that is red:
-    <select id="color_test">
-      <option value="null"></option>
-      <option class="red" value="red">Color 1&nbsp;&nbsp;&nbsp;&nbsp;</option>
-      <option class="orange" value="orange">Color 2&nbsp;&nbsp;&nbsp;&nbsp;</option>
-    </select>
+    Choose the option that is red: <br>
+    <input class="red color" type="radio" name="color" value="red"><span class="red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+    <input class="orange color" type="radio" name="color" value="orange"><span class="orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+    <input class="yellow color" type="radio" name="color" value="yellow"><span class="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
+    <input class="green color" type="radio" name="color" value="green"><span class="green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br>
   </div>
   <div>
     <p>How familiar are you with electronic fluorescent pictograph (eFP) images like the one below?</p>
