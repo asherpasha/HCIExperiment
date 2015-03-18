@@ -13,12 +13,21 @@ class HCI.SignUpView extends Backbone.View
 
   inputChange: ->
     @$('input').removeClass('required')
+    @$('select').removeClass('required')
 
   showConsentForm: ->
     if @$('#name').val() == ""
       @$('#name').addClass('required')
     else if @$('#email').val() == ''
       @$('#email').addClass('required')
+    else if @$('#age').val() == ''
+      @$('#age').addClass('required')
+    else if @$('#efp_experience').val() == 'null'
+      @$('#efp_experience').addClass('required')
+    else if @$('#gender').val() == 'null'
+      @$('#gender').addClass('required')
+    else if @$('#input_type').val() == 'null'
+      @$('#input_type').addClass('required')
     else
       @model.set('email', @$('#email').val())
       @model.set('name', @$('#name').val())
