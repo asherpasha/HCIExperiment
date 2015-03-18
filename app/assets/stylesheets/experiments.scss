@@ -25,10 +25,6 @@ textarea {
   height: 200px;
 }
 
-#rsvp {
-  width: 150px;
-}
-
 input.required {
   border-color: #FF0000;
   outline: 0;
@@ -99,7 +95,7 @@ div.experiment {
     display: inline-block;
     background-color: lightgray;
     width: 260px;
-    padding: 20px;
+    padding: 8px 20px 20px 20px;
     p {
       font-size: 0.8em;
     }
@@ -115,6 +111,9 @@ div.experiment {
         width: 40px;
         display: inline-block;
         background-color: #000000;
+      }
+      &#rsvp {
+        width: 150px;
       }
     }
     div.control {

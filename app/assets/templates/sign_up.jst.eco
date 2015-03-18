@@ -10,18 +10,6 @@
     <input id="age" class="form-control" type='text' placeholder='Age'>
   </div>
   <div>
-    <p>How familiar are you with electronic fluorescent pictograph (eFP) images?</p>
-    <select id="efp_experience">
-      <option value="null"></option>
-      <option value="1">Not at all familiar</option>
-      <option value="2">Slightly familiar</option>
-      <option value="3">Somewhat familiar</option>
-      <option value="4">Moderately familiar</option>
-      <option value="5">Extremely familiar</option>
-    </select>
-  </div>
-  <img src="/assets/sign-up.png">
-  <div>
     Gender:
     <select id="gender">
       <option value="null"></option>
@@ -31,11 +19,11 @@
     </select>
   </div>
   <div>
-    Method of interaction:
+    What kind of pointer device are you using?
     <select id="input_type">
       <option value="null"></option>
       <option value="mouse">Mouse</option>
-      <option value="keyboard">Keyboard</option>
+      <option value="trackpad">Trackpad</option>
     </select>
   </div>
   <div>
@@ -46,5 +34,17 @@
       <option class="orange" value="orange">Color 2&nbsp;&nbsp;&nbsp;&nbsp;</option>
     </select>
   </div>
+  <div>
+    <p>How familiar are you with electronic fluorescent pictograph (eFP) images like the one below?</p>
+    <select id="efp_experience">
+      <option value="null"></option>
+      <option value="1">Not at all familiar</option>
+      <option value="2">Slightly familiar</option>
+      <option value="3">Somewhat familiar</option>
+      <option value="4">Moderately familiar</option>
+      <option value="5">Extremely familiar</option>
+    </select>
+  </div>
+  <img src="/assets/sign-up.png">
 </div>
 <button type="button" class="btn btn-default">Submit</button>

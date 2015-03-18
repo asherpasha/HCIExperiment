@@ -20,6 +20,7 @@ class HCI.AutomaticRSVPControlsView extends Backbone.View
     this
 
   clickStimuli: (event) ->
+    clearTimeout(@timer)
     @active_stimuli = @$(event.target).attr('data-stimuli-number')
     @$('button.btn-primary').removeClass('btn-primary')
     @$(event.target).addClass('btn-primary')
@@ -27,8 +28,10 @@ class HCI.AutomaticRSVPControlsView extends Backbone.View
 
   toggleRSVP: ->
     if @rsvp
+      @$('#rsvp').text('Start RSVP')
       clearTimeout(@timer)
     else
+      @$('#rsvp').text('Stop RSVP')
       @advanceRSVP()
     @rsvp = !@rsvp
 

@@ -29,7 +29,7 @@ class HCI.ConfirmView extends Backbone.View
   confirm: (event) ->
     @end()
     @remove()
-    if @model.results.size() == 9
+    if @model.results.size() == 10
       post_test_view = new HCI.PostTestQuestionnaireView(model: @model)
       $('#forms').html(post_test_view.render().el)
     else

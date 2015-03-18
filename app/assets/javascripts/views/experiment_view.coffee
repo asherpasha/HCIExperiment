@@ -11,7 +11,7 @@ class HCI.ExperimentView extends Backbone.View
   initialize: (options) ->
     if options?.stimuli_id?
       @stimuli_id = options.stimuli_id
-
+      @active_stimuli = @stimuli_id
     if options?.result?
       @result = options.result
     else
@@ -25,11 +25,11 @@ class HCI.ExperimentView extends Backbone.View
       else if @model.results.indexOf(@result) == 1
         @result.set('answer', 6)
         @result.set('stimuli_number', 2)
-        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the sep/pet/stem/carp?")
+        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the stage 12 petals?")
       else if @model.results.indexOf(@result) == 2
         @result.set('answer', 3)
         @result.set('stimuli_number', 3)
-        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "bulb image 10 and 11?")
+        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the stage 10 and 11 flowers?")
       else if @model.results.indexOf(@result) == 3
         @result.set('answer', 4)
         @result.set('stimuli_number', 4)
@@ -41,11 +41,11 @@ class HCI.ExperimentView extends Backbone.View
       else if @model.results.indexOf(@result) == 5
         @result.set('answer', 9)
         @result.set('stimuli_number', 6)
-        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "seed silique embryo #6?")
+        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the stage 6 seeds?")
       else if @model.results.indexOf(@result) == 6
         @result.set('answer', 10)
         @result.set('stimuli_number', 7)
-        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "leaf #2?")
+        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the stage 2 leaf?")
       else if @model.results.indexOf(@result) == 7
         @result.set('answer', 6)
         @result.set('stimuli_number', 8)
@@ -53,7 +53,12 @@ class HCI.ExperimentView extends Backbone.View
       else if @model.results.indexOf(@result) == 8
         @result.set('answer', 7)
         @result.set('stimuli_number', 9)
-        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "entire rosette after transition to flowering?")
+        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the entire rosette after transition to flowering?")
+      else if @model.results.indexOf(@result) == 9
+        @result.set('answer', 6)
+        @result.set('stimuli_number', 10)
+        $('a.navbar-brand').text($('a.navbar-brand').text() + question + "the stage 9 flower?")
+
       @start()
 
   render: ->

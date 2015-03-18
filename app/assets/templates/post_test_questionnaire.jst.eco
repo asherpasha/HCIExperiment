@@ -1,6 +1,6 @@
-
+<h1>Thank you for participating in our study. We have a few more questions for you...</h1>
 <div>
-  <p>How did you feel about the method of interaction for comparing images?</p>
+  <p>How did you feel about the interaction method for viewing and selecting images?</p>
   <select id="interaction_rating">
     <option value="null"></option>
     <option value="1">Very Negative</option>
@@ -25,7 +25,7 @@
 
 <% if @model.get('experiment_group') != 1: %>
   <div>
-    <p>How would you describe the experience of using an RSVP display?</p>
+    <p>How would you describe the experience of rapidly viewing images?</p>
     <textarea id='rsvp_experience'></textarea>
   </div>
 <% end %>

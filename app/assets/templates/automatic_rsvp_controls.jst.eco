@@ -1,4 +1,4 @@
-<p>Click start in the sidebar to begin automatically scrolling through the images</p>
+<p>Click Start RSVP to begin automatically scrolling through the images</p>
 <button class='btn btn-default stimuli-button' data-stimuli-number='1'>1</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='2'>2</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='3'>3</button>
@@ -9,7 +9,9 @@
 <button class='btn btn-default stimuli-button' data-stimuli-number='8'>8</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='9'>9</button>
 <button class='btn btn-default stimuli-button' data-stimuli-number='10'>10</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='11'>11</button>
+<button class='btn btn-default stimuli-button' data-stimuli-number='12'>12</button>
 <br/>
-<button class='btn btn-default' id='rsvp'>Start</button>
+<button class='btn btn-default' id='rsvp'>Start RSVP</button>
 <br/>
 <button class='btn btn-default' id='submit'>Submit</button>
