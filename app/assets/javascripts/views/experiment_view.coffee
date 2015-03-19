@@ -71,11 +71,6 @@ class HCI.ExperimentView extends Backbone.View
     else if @model.get('experiment_group') == 4 #momentum rsvp
       @controls_view = new HCI.SliderControlsView(active_stimuli: @stimuli_id)
 
-    # @controls_view = new HCI.PointAndClickControlsView(active_stimuli: @stimuli_id)
-    # @controls_view = new HCI.AutomaticRSVPControlsView(active_stimuli: @stimuli_id)
-    # @controls_view = new HCI.HoverControlsView(active_stimuli: @stimuli_id)
-    # @controls_view = new HCI.SliderControlsView(active_stimuli: @stimuli_id)
-
     @$el.html(@template())
     @stimuli_view = new HCI.StimuliView(active_stimuli: @stimuli_id, stimuli_number: @result.get('stimuli_number'))
     @$('#stimuli').html(@stimuli_view.render().el)
