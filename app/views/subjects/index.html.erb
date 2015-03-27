@@ -1,0 +1,20 @@
+<% @subjects.each do |subject| %>
+  <%= subject.id %>,
+  <%= subject.email %>,
+  <%= subject.age %>,
+  <%= subject.experiment_group %>,
+  <%= subject.input_type %>,
+  <%= subject.color_test %>,
+  <%= subject.efp_experience %>,
+  <%= subject.gender %>,
+  <%= subject.rsvp_experience %>,
+  <%= subject.experience_difficulty %>,
+  <%= subject.display_helpfulness %>,
+  <%= subject.interaction_rating %>,
+  <% subject.results.each do |result| %>
+    <%= result.end_time.to_f - result.start_time.to_f%>,
+    <%= result.answer %>,
+    <%= result.subject_answer %>,
+  <% end %>
+  <br>
+<% end %>
