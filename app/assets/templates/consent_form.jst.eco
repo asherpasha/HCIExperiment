@@ -2,10 +2,11 @@
   <h3>Consent Form</h3>
 </div>
 <div>
-<p>By clicking submit, I hereby consent to participate in a study conducted by Jamie Waese, Simon Cook, Sathaporn Hu, Xiwen Zhou, and Pan Zhang for an assignment in University of Toronto Computer Science 428: Research Methods in Human Computer Interaction.</p>
-<p>The purpose of this study is to evaluate methods of selecting images using Rapid Serial Visual Presentation (RSVP). It will involve rapidly showing images in a sequence and asking you to select one.</p>
-<p>I will receive no compensation for my participation.</p>
-<p>I am free to withdraw before or any time during the study without the need to give any explanation.<p>
-<p>All materials and results will be kept confidential. My name and any identifying or identified information will not be associated with the data.</p>
+By clicking submit, I hereby consent to participate in a Human Computer Interaction study conducted by Jamie Waese, Wolfgang Stuerzlinger, and Nicholas Provart.
+The purpose of this study is to evaluate methods of selecting images using Rapid Serial Visual Presentation (RSVP). It will involve reviewing a set of images and selecting which one best answers a question.
+Participation is voluntary and I have the right to withdraw consent or discontinue participation at any time without the need to give any explanation.
+Students enrolled in CSB352 Bioinformatics Methods will receive a 1% bonus point on their grade for completing the study.
+There are no anticipated risks associated with this study beyond than the usual potential for wrist fatigue or eye strain associated with using a website.
+All materials and results will be kept confidential. My name and any identifying or identified information will not be associated with the data.
 </div>
 <button type="button" class="btn btn-default">Submit</button>
